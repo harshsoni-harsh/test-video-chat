@@ -1,0 +1,10 @@
+name: Threat Modeling
+on: [push, pull_request]
+
+jobs:
+  threat-model:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use CI Threat Modeler
+        id: itsa
+        uses: harshsoni-harsh/threat-modeler@main
